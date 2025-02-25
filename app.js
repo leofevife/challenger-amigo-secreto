@@ -42,9 +42,10 @@ function sorteioIndividual() {
 
 }
 
+let amigoSorteado = amigosEmbaralhados[0];
 
-
-
+let resultado = document.getElementById('resultado');
+    resultado.innerHTML = `Amigo sorteado: ${amigoSorteado}`;
 
 
 
