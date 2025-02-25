@@ -15,6 +15,16 @@ function nomeNoCampoDeTexto () {
 }
 
 
+function atualizarListaAmigos() {
+    let listaAmigos = document.getElementById('listaAmigos');
+    listaAmigos.innerHTML = "";
+
+    amigos.forEach(function(amigo) {
+        let novoAmigo = document.createElement('li');
+        novoAmigo.textContent = amigo;
+        listaAmigos.appendChild(novoAmigo);
+    });
+}
 
 
 
