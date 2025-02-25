@@ -27,8 +27,20 @@ function atualizarListaAmigos() {
 }
 
 
+function sorteioIndividual() {
+    if (amigos.length < 2) {
+        alert("Adicione pelo menos 2 amigos para sortear.");
+        return;
+    }
 
+    let amigosEmbaralhados = amigos.slice();
 
+    for (let i = amigosEmbaralhados.length - 1; i > 0; i--) {
+        let j = Math.floor(Math.random() * (i + 1));
+        [amigosEmbaralhados[i], amigosEmbaralhados[j]] = [amigosEmbaralhados[j], amigosEmbaralhados[i]];
+    }
+
+}
 
 
 
