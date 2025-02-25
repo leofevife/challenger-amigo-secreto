@@ -8,7 +8,7 @@ function addAmigo() {
     if (inputNome === "") {
         alert("Por favor, insira um nome.");
         return;
-    }
+    } 
 
     amigos.push(inputNome);
     document.getElementById('amigo').value = "";
